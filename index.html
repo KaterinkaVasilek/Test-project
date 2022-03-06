@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<title>Test project</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="container navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">About</li>
+				<li class="navigation__item">Skills</li>
+				<li class="navigation__item">Gallery</li>
+				<li class="navigation__item">Blog</li>
+				<li class="navigation__item">Contacts</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="content">
+			<section class="container">
+				<div class="intro">
+					<h1>По каким причинам вы впадаете в стресс?</h1>
+					<img src="imgs/stress.jpg" class="intro__img" alt="picture stress">
+				</div>
+			</section>
+			<section class="comment container">
+				<div class="comment__feed">
+					<h2>Напишите ответ ниже</h2>
+					<ol class="comment__list">
+					</ol>
+					<form action="#" method="post" class="comment__form">
+						<div class="comment__inner">
+							<label class="comment__label" for="comment-input"></label>
+							<input type="text" class="comment__field" value=""
+								placeholder="Ваш комментарий" required id="comment-input">
+						</div>
+						<button class="comment__btn" type="submit">Отправить</button>
+					</form>
+					<div class="heart" type="button">&#9825;<span class="likes__number"></span></div>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__copyright">
+				<p>&copy;Site's author 2022</p>
+			</div>
+			<div class="footer__nav">
+				<nav>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">About</li>
+						<li class="footer__nav-item">Skills</li>
+						<li class="footer__nav-item">Gallery</li>
+						<li class="footer__nav-item">Blog</li>
+						<li class="footer__nav-item">Contacts</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>

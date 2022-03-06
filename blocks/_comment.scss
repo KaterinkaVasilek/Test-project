@@ -1,0 +1,112 @@
+.comment {
+	&__feed h2 {
+		margin-top: 10px;
+		margin-bottom: 12px;
+	}
+	&__list {
+		margin-top: 10px;
+		margin-right: 0;
+		margin-bottom: 12px;
+		margin-left: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: comments;
+		& li {
+			margin-bottom: 6px;
+			padding: 10px 12px;
+			min-height: 36px;
+			font-size: 14px;
+			line-height: 24px;
+			border: 1px solid #90EE90;
+		}
+		& .user__comment {
+			position: relative;
+			display: flex;
+			::before {
+				counter-increment: comments;
+				content: "#" counter(comments);
+				padding-right: 12px;
+				margin-right: 12px;
+				border-right: 1px solid;
+				font-weight: bold;
+			}
+			::after {
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				bottom: 0;
+				left: -8px;
+				border: 4px solid;
+				border-left-color: transparent;
+				border-top-color: transparent;
+			}
+		}
+	}
+	&__form {
+		display: flex;
+		padding: 20px 12px;
+	}
+	&__inner {
+		position: relative;
+		flex-grow: 1;
+		margin-right: 10px;
+	}
+	&__label {
+		position: absolute;
+		top: -16px;
+		left: -9px;
+		padding: 4px 8px;
+		font-size: 10px;
+		line-height: 14px;
+	}
+	&__field {
+		width: 97%;
+		height: 50px;
+		padding: 0 10px;
+		border: 1px solid #90EE90;
+		border-radius: 20px;
+		background-color: transparent;
+		font: inherit;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	&__btn {
+		width: 130px;
+		height: 50px;
+		font-size: 18px;
+		background: #90EE90;
+		border: none;
+		border-radius: 20px;
+	}
+}
+
+.comment__field::placeholder {
+	color: #aaaaaa;
+	font: inherit;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.comment__field:focus::placeholder {
+	font-size: 0;
+}
+
+.comment__field:hover::placeholder,
+.comment__field:active::placeholder {
+	opacity: 0.5;
+}
+
+.heart {
+	padding: 12px 10px;
+	width: 16px;
+	height: 28px;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+.heart .likes__number {
+	margin-left: 24px;
+	line-height: 14px;
+}

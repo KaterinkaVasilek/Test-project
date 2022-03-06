@@ -1,0 +1,14 @@
+.navigation {
+	color: #fff;
+	font-size: 30px;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		transition: transform 1s;
+		&:hover {
+			transform: scale(1.25);
+		}
+	}
+}
